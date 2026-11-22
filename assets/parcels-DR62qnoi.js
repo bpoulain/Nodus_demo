@@ -1,0 +1,1 @@
+import{i as e}from"./vendor-BZLte0r4.js";const c=4,r=e({current:"NX-2048",parcels:[{code:"NX-2048",step:2,place:"home"}]},"hero-parcel");function o(e,c=r){const o=c.parcels.filter(c=>c.code!==e.code);c.parcels=[...o.length>=4?o.slice(1):o,e],c.current=e.code}export{c as M,r as p,o as s};

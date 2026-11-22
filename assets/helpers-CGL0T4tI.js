@@ -1,0 +1,1 @@
+function i(i){return i}function e(i,e){return`<div class="site-demo-cell"><p class="site-demo-label">${i}</p><div class="site-demo-preview">${e}</div></div>`}function s(i){return`<div class="site-demo-grid">${Array.isArray(i)?i.join(""):i}</div>`}export{e as a,i as c,s as g};

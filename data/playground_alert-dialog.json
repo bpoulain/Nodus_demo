@@ -1,0 +1,1 @@
+{"cancel":"<button\n    type=\"button\"\n    class=\"btn btn--outline btn--md\"\n    \n    \n    data-alert-dialog-cancel\n  ><span>Annuler</span></button>","action":"<button\n    type=\"button\"\n    class=\"btn btn--destructive btn--md\"\n    \n    \n    data-alert-dialog-action\n  ><span>Supprimer</span></button>"}

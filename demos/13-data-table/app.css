@@ -1,0 +1,11 @@
+/*!
+    __          
+   / /_   ____  
+  / __ \ / __ \ 
+ / /_/ // /_/ / 
+ \____// ____/  
+      /_/       
+
+ Nodus 4.27.2 — © 2026 Benoit POULAIN — All rights reserved
+*/
+.dt-stack{gap:var(--space-8);inline-size:100%;margin-inline:auto;max-inline-size:72rem}.dt-section,.dt-stack{display:flex;flex-direction:column}.dt-section{gap:var(--space-3);min-inline-size:0}.dt-section h2{font-size:var(--text-lg);font-weight:var(--font-semibold);margin:0}.dt-intro{color:var(--color-fg-muted);font-size:var(--text-sm);margin:0;max-inline-size:65ch}

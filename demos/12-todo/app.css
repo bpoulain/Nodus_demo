@@ -1,0 +1,11 @@
+/*!
+    __          
+   / /_   ____  
+  / __ \ / __ \ 
+ / /_/ // /_/ / 
+ \____// ____/  
+      /_/       
+
+ Nodus 4.27.2 — © 2026 Benoit POULAIN — All rights reserved
+*/
+.todo{margin-inline:auto;max-width:36rem;padding:var(--space-10) var(--space-4)}.todo-head{margin-bottom:var(--space-6)}.todo-title{font-size:var(--text-3xl);font-weight:var(--font-bold);letter-spacing:-.02em;line-height:var(--leading-9);margin:0}.todo-sub{color:var(--color-fg-muted);font-size:var(--text-sm);margin:var(--space-1) 0 0}.todo-card{overflow:hidden;padding:0}.todo-new{align-items:flex-end;border-bottom:1px solid var(--color-border);display:flex;gap:var(--space-2);padding:var(--space-4)}.todo-new .field{flex:1;min-width:0}.todo-all{border-bottom:1px solid var(--color-border);color:var(--color-fg-muted);font-size:var(--text-sm);padding:var(--space-3) var(--space-4)}.todo-list{list-style:none;margin:0;padding:0}.todo-item{align-items:center;border-bottom:1px solid var(--color-border);display:flex;gap:var(--space-2);justify-content:space-between;min-height:var(--space-12);padding:var(--space-1) var(--space-2) var(--space-1) var(--space-4)}.todo-item .checkbox-label{overflow-wrap:anywhere}.todo-item.is-done .checkbox-label{color:var(--color-fg-muted);text-decoration:line-through}.todo-edit{flex:1}.todo-actions{display:flex;flex:none;opacity:.55;transition:opacity var(--duration-fast) var(--ease-default)}.todo-item:is(:hover,:focus-within) .todo-actions{opacity:1}.todo-foot{align-items:center;background:var(--color-bg-muted);display:flex;flex-wrap:wrap;gap:var(--space-2);justify-content:space-between;padding:var(--space-2) var(--space-4)}.todo-foot p{margin:0}.todo-filters{display:flex;gap:var(--space-1)}.todo-card .empty{padding-block:var(--space-8)}@media (prefers-reduced-motion:reduce){.todo-actions{transition:none}}

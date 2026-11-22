@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>404 — Nodus</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1rem;
+    background: #fff; color: #111;
+    font-family: system-ui, sans-serif; line-height: 1.5; }
+  main { max-width: 32rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.5rem; }
+  p { margin: 0 0 1rem; color: #555; }
+  a { color: #2563eb; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page introuvable</h1>
+  <p>Cette adresse ne correspond à aucune page de Nodus.</p>
+  <p><a class="accueil" href="https://bpoulain.github.io/Nodus_demo/">Retour à l'accueil</a></p>
+  <div lang="en">
+  <h1>Page not found</h1>
+  <p>This address matches no page of Nodus.</p>
+  <p><a class="accueil" href="https://bpoulain.github.io/Nodus_demo/">Back to home</a></p>
+  </div>
+</main>
+<script>
+  // Site de projet GitHub Pages (utilisateur.github.io/depot/) : l'accueil est /depot/, pas /.
+  var seg = location.hostname.endsWith('.github.io') && location.pathname.split('/')[1];
+  if (seg) document.querySelectorAll('.accueil').forEach(function (a) { a.href = '/' + seg + '/'; });
+</script>
+</body>
+</html>

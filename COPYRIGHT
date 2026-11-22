@@ -1,0 +1,23 @@
+Copyright (c) 2026 Benoit POULAIN. Tous droits réservés. All rights reserved.
+
+Nodus (bibliothèque, starter, site de documentation, démos), son code, ses textes et ses dessins
+sont la propriété exclusive de Benoit POULAIN. Aucune licence n'est accordée. Sans autorisation
+écrite préalable, il est interdit de copier, modifier, adapter, redistribuer, publier ou réutiliser
+tout ou partie de ce projet, sous quelque forme que ce soit, hors des exceptions prévues par la loi.
+
+Depuis la version 4.26.0. Les versions antérieures, diffusées sous licence MIT, le restent.
+
+Les travaux de tiers que Nodus redistribue (Reef, icônes Lucide, polices Geist, Marked, Prism)
+restent soumis à leurs licences respectives : voir THIRD-PARTY.md.
+
+---
+
+No license is granted. Nodus (library, starter, documentation site, demos), its code, texts and
+drawings are the exclusive property of Benoit POULAIN. Copying, modifying, adapting,
+redistributing, publishing or reusing any part of this project without prior written permission
+is prohibited, except as provided by law.
+
+Since version 4.26.0. Earlier versions, released under the MIT License, remain so.
+
+Third-party works redistributed by Nodus (Reef, Lucide icons, Geist fonts, Marked, Prism) remain
+subject to their own licenses: see THIRD-PARTY.md.
