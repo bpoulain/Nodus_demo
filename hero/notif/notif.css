@@ -6,6 +6,6 @@
  \____// ____/  
       /_/       
 
- Nodus 4.27.3 — © 2026 Benoit POULAIN — All rights reserved
+ Nodus 4.27.4 — © 2026 Benoit POULAIN — All rights reserved
 */
 .hero-inline-field{align-items:center;display:inline-flex;flex-wrap:wrap;gap:var(--space-1-5)}.hero-inline-field .native-select{width:auto}.hero-banner{align-items:center;animation:hero-banner-in var(--duration-slow) var(--ease-out);background:var(--color-bg-elevated);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);display:grid;gap:var(--space-3);grid-template-columns:auto minmax(0,1fr) auto;padding:var(--space-3)}.hero-banner-icon{color:var(--hero-accent,var(--color-primary))}.hero-banner.is-held{background:var(--color-bg-muted);box-shadow:none}.hero-banner.is-held .hero-banner-icon{color:var(--color-fg-muted)}@keyframes hero-banner-in{0%{opacity:0;transform:translateY(calc(var(--space-2)*-1))}}.hero-settings{display:flex;flex-direction:column}.hero-time{width:6.5rem}.hero-card--notif .hero-setting{padding-block:var(--space-1-5)}@media (prefers-reduced-motion:reduce){.hero-banner{animation:none}}
