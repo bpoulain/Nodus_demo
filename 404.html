@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>404 — Nodus</title>
+<script>
+  // Relais : l'application affiche sa propre page introuvable (scripts/page-404.js).
+  var cible404 = function cible404(loc, racine) {
+  if (loc.hash) return null; // déjà passé par le relais : pas de boucle
+  const seg = loc.hostname.slice(-10) === '.github.io' && loc.pathname.split('/')[1];
+  // Racine connue (siteUrl) ; hors d'elle (npm run dev, autre hôte), déduite de l'adresse.
+  const base = racine && loc.pathname.indexOf(racine) === 0 ? racine : seg ? '/' + seg + '/' : '/';
+  if (loc.pathname.indexOf(base) !== 0 || loc.pathname === base) return null;
+  return base + '#/' + loc.pathname.slice(base.length).replace(/\/+$/, '');
+};
+  var cible = cible404(location, "/Nodus_demo/");
+  if (cible) location.replace(cible);
+  else document.addEventListener('DOMContentLoaded', function () {
+    var seg = !"/Nodus_demo/" && location.hostname.slice(-10) === '.github.io' && location.pathname.split('/')[1];
+    if (seg) document.querySelectorAll('.accueil').forEach(function (a) { a.href = '/' + seg + '/'; });
+  });
+</script>
 <style>
   body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1rem;
     background: #fff; color: #111;
@@ -19,17 +36,12 @@
 <main>
   <h1>Page introuvable</h1>
   <p>Cette adresse ne correspond à aucune page de Nodus.</p>
-  <p><a class="accueil" href="https://bpoulain.github.io/Nodus_demo/">Retour à l'accueil</a></p>
+  <p><a class="accueil" href="/Nodus_demo/">Retour à l'accueil</a></p>
   <div lang="en">
   <h1>Page not found</h1>
   <p>This address matches no page of Nodus.</p>
-  <p><a class="accueil" href="https://bpoulain.github.io/Nodus_demo/">Back to home</a></p>
+  <p><a class="accueil" href="/Nodus_demo/">Back to home</a></p>
   </div>
 </main>
-<script>
-  // Site de projet GitHub Pages (utilisateur.github.io/depot/) : l'accueil est /depot/, pas /.
-  var seg = location.hostname.endsWith('.github.io') && location.pathname.split('/')[1];
-  if (seg) document.querySelectorAll('.accueil').forEach(function (a) { a.href = '/' + seg + '/'; });
-</script>
 </body>
 </html>
